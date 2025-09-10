@@ -1,116 +1,136 @@
 <!DOCTYPE html>
 <html lang="ar">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>موقع فيلم F1</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Title & Description -->
+  <title>فيلم F1 – كل ما تريد معرفته عن أحدث الأفلام</title>
+  <meta name="description" content="شاهد تفاصيل فيلم F1 الجديد، أحداث الفيلم، أبطاله، وآخر الأخبار. اكتشف كل جديد عن الفيلم الأكثر انتظارًا لعام 2025." />
+
+  <!-- Keywords -->
+  <meta name="keywords" content="فيلم F1, مشاهدة فيلم F1, اخبار فيلم F1, أبطال فيلم F1, فيلم F1 2025" />
+
+  <!-- Open Graph (Facebook & Social) -->
+  <meta property="og:title" content="فيلم F1 – أحدث التفاصيل والمعلومات" />
+  <meta property="og:description" content="تعرف على قصة فيلم F1 الجديد وأحداثه المثيرة وأهم الأخبار عنه." />
+  <meta property="og:image" content="https://mvstafasobhi0-arch.github.io/f1-website/f1poster.jpg" />
+  <meta property="og:url" content="https://mvstafasobhi0-arch.github.io/f1-website/" />
+  <meta property="og:type" content="website" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="فيلم F1 – أحدث التفاصيل والمعلومات" />
+  <meta name="twitter:description" content="شاهد آخر أخبار فيلم F1 وقصته وأبطاله." />
+  <meta name="twitter:image" content="https://mvstafasobhi0-arch.github.io/f1-website/f1poster.jpg" />
+
+  <!-- Structured Data (JSON-LD) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Movie",
+    "name": "فيلم F1",
+    "image": "https://mvstafasobhi0-arch.github.io/f1-website/f1poster.jpg",
+    "datePublished": "2025-09-01",
+    "director": {
+      "@type": "Person",
+      "name": "مخرج الفيلم"
+    },
+    "actor": [
+      { "@type": "Person", "name": "بطل الفيلم الأول" },
+      { "@type": "Person", "name": "بطل الفيلم الثاني" }
+    ],
+    "description": "فيلم F1 هو أحد أكثر الأفلام المنتظرة لعام 2025، حيث يقدم قصة مثيرة تجمع بين السرعة والإثارة."
+  }
+  </script>
+
   <style>
-    /* الأساسيات */
-    body { margin: 0; font-family: Arial, sans-serif; }
-
-    .navbar {
-      background: #111;
-      color: #fff;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 10px 20px;
-      position: relative;
-    }
-
-    .navbar .logo {
-      font-size: 20px;
-      font-weight: bold;
-    }
-
-    .navbar ul {
-      list-style: none;
-      display: flex;
-      gap: 20px;
+    body {
+      font-family: Arial, sans-serif;
       margin: 0;
       padding: 0;
+      line-height: 1.6;
+      direction: rtl;
+      text-align: right;
     }
-
-    .navbar ul li a {
+    header {
+      background: #111;
       color: #fff;
+      padding: 20px;
+      text-align: center;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2rem;
+    }
+    nav {
+      background: #222;
+      padding: 10px;
+      text-align: center;
+    }
+    nav a {
+      color: #fff;
+      margin: 0 15px;
       text-decoration: none;
-      transition: 0.3s;
     }
-
-    .navbar ul li a:hover {
-      color: #ff4444;
-      text-decoration: underline;
+    section {
+      padding: 20px;
     }
-
-    /* أيقونة المينيو في الموبايل */
-    .menu-icon {
-      display: none;
-      font-size: 25px;
-      cursor: pointer;
-    }
-
-    #menu-toggle {
-      display: none;
-    }
-
-    /* responsive */
-    @media (max-width: 768px) {
-      .navbar ul {
-        display: none;
-        flex-direction: column;
-        position: absolute;
-        top: 55px;
-        left: 0;
-        width: 100%;
-        background: #111;
-        padding: 10px 0;
-      }
-
-      .navbar ul li {
-        text-align: center;
-        padding: 10px 0;
-      }
-
-      #menu-toggle:checked + .menu-icon + .menu {
-        display: flex;
-      }
-
-      .menu-icon {
-        display: block;
-      }
+    footer {
+      background: #111;
+      color: #ccc;
+      text-align: center;
+      padding: 15px;
+      font-size: 0.9rem;
     }
   </style>
 </head>
 <body>
 
-  <!-- ✅ Navbar الجديد -->
+  <!-- Header -->
   <header>
-    <nav class="navbar">
-      <div class="logo">F1 Website</div>
-      <input type="checkbox" id="menu-toggle">
-      <label for="menu-toggle" class="menu-icon">&#9776;</label>
-      <ul class="menu">
-        <li><a href="index.html">الرئيسية</a></li>
-        <li><a href="about.html">عن الفيلم</a></li>
-        <li><a href="story.html">القصة</a></li>
-        <li><a href="cast.html">الأبطال</a></li>
-        <li><a href="release.html">موعد العرض</a></li>
-        <li><a href="contact.html">تواصل معنا</a></li>
-        <li><a href="privacy.html">الخصوصية</a></li>
-      </ul>
-    </nav>
+    <h1>فيلم F1 – كل التفاصيل والمعلومات</h1>
+    <p>أحدث فيلم لعام 2025 – اكتشف القصة والأبطال والأحداث المثيرة</p>
   </header>
 
-  <!-- ✅ المحتوى -->
-  <main style="padding: 20px;">
-    <h1>مرحبًا بك في موقع فيلم F1</h1>
-    <p>هنا هتلاقي كل تفاصيل الفيلم: القصة، الأبطال، وموعد العرض.</p>
-  </main>
+  <!-- Navigation -->
+  <nav>
+    <a href="index.html">الرئيسية</a>
+    <a href="about.html">عن الفيلم</a>
+    <a href="contact.html">تواصل معنا</a>
+    <a href="privacy.html">سياسة الخصوصية</a>
+  </nav>
+
+  <!-- Main Section -->
+  <section>
+    <h2>قصة فيلم F1</h2>
+    <p>
+      فيلم F1 هو أحد أكثر الأفلام المنتظرة في 2025. تدور أحداثه حول السرعة، المنافسة، 
+      والإصرار على النجاح مهما كانت التحديات. الفيلم يجمع بين الأكشن والدراما بطريقة شيقة.
+    </p>
+
+    <h2>أبطال الفيلم</h2>
+    <ul>
+      <li>النجم الأول – شخصية البطل الرئيسي</li>
+      <li>النجم الثاني – شخصية الخصم</li>
+      <li>النجم الثالث – دور مساعد مهم</li>
+    </ul>
+
+    <h2>أحدث الأخبار</h2>
+    <p>
+      تابع هنا كل جديد عن مواعيد عرض الفيلم، كواليس التصوير، وآخر تصريحات فريق العمل.
+    </p>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 فيلم F1. جميع الحقوق محفوظة.</p>
+  </footer>
 
 </body>
 </html>
 
-</html>
+
 
 
 
