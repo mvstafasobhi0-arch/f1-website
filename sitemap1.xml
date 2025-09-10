@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+  <!-- الصفحة الرئيسية -->
+  <url>
+    <loc>https://mvstafasobhi0-arch.github.io/f1-website/</loc>
+    <priority>1.0</priority>
+  </url>
+
+  <!-- صفحة عن الموقع -->
+  <url>
+    <loc>https://mvstafasobhi0-arch.github.io/f1-website/about.html</loc>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- صفحة التواصل -->
+  <url>
+    <loc>https://mvstafasobhi0-arch.github.io/f1-website/contact.html</loc>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- صفحة الخصوصية -->
+  <url>
+    <loc>https://mvstafasobhi0-arch.github.io/f1-website/privacy.html</loc>
+    <priority>0.5</priority>
+  </url>
+
+</urlset>
