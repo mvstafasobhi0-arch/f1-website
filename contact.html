@@ -1,36 +1,135 @@
 <!DOCTYPE html>
-<html lang="ar" dir="rtl">
+<html lang="ar">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>تواصل معنا | F1 Movie</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Title & Description -->
+  <title>تواصل معنا – فيلم F1</title>
+  <meta name="description" content="تواصل معنا لمعرفة المزيد عن فيلم F1 الجديد لعام 2025. نحن هنا للإجابة عن استفساراتك." />
+
+  <!-- Keywords -->
+  <meta name="keywords" content="تواصل فيلم F1, اتصل بفيلم F1, فيلم F1 2025" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="تواصل معنا – فيلم F1" />
+  <meta property="og:description" content="تواصل معنا لمعرفة كل التفاصيل حول فيلم F1 الجديد." />
+  <meta property="og:image" content="https://mvstafasobhi0-arch.github.io/f1-website/f1poster.jpg" />
+  <meta property="og:url" content="https://mvstafasobhi0-arch.github.io/f1-website/contact.html" />
+  <meta property="og:type" content="website" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="تواصل معنا – فيلم F1" />
+  <meta name="twitter:description" content="لأي استفسار بخصوص فيلم F1 الجديد، لا تتردد في مراسلتنا." />
+  <meta name="twitter:image" content="https://mvstafasobhi0-arch.github.io/f1-website/f1poster.jpg" />
+
   <style>
-    body {font-family: 'Cairo', sans-serif; background:#f5f5f5; margin:0; padding:0; color:#333;}
-    header {background:linear-gradient(90deg,#ff1e00,#111); color:#fff; padding:1rem; text-align:center;}
-    main {max-width:800px; margin:auto; background:#fff; padding:1.5rem; margin-top:1.5rem; border-radius:12px; box-shadow:0 0 10px rgba(0,0,0,0.1);}
-    form {display:flex; flex-direction:column;}
-    input, textarea {margin:0.5rem 0; padding:0.7rem; border:1px solid #ccc; border-radius:6px;}
-    button {background:#ff1e00; color:#fff; border:none; padding:0.8rem; border-radius:6px; cursor:pointer;}
-    button:hover {background:#cc1800;}
-    footer {background:#111; color:#ddd; text-align:center; padding:1rem; margin-top:2rem;}
-    footer a {color:#ff4c3b; text-decoration:none;}
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      line-height: 1.6;
+      direction: rtl;
+      text-align: right;
+    }
+    header {
+      background: #111;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2rem;
+    }
+    nav {
+      background: #222;
+      padding: 10px;
+      text-align: center;
+    }
+    nav a {
+      color: #fff;
+      margin: 0 15px;
+      text-decoration: none;
+    }
+    section {
+      padding: 20px;
+    }
+    form {
+      max-width: 500px;
+      margin: auto;
+      background: #f9f9f9;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    label {
+      display: block;
+      margin-bottom: 5px;
+      font-weight: bold;
+    }
+    input, textarea {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 15px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+    }
+    button {
+      background: #111;
+      color: #fff;
+      border: none;
+      padding: 10px 20px;
+      cursor: pointer;
+      border-radius: 5px;
+    }
+    footer {
+      background: #111;
+      color: #ccc;
+      text-align: center;
+      padding: 15px;
+      font-size: 0.9rem;
+    }
   </style>
 </head>
 <body>
+
+  <!-- Header -->
   <header>
     <h1>تواصل معنا</h1>
+    <p>لأي استفسار أو ملاحظات حول فيلم F1</p>
   </header>
-  <main>
-    <p>يسعدنا تواصلك معنا لأي استفسارات أو اقتراحات.</p>
-    <form action="mailto:example@example.com" method="post" enctype="text/plain">
-      <input type="text" name="name" placeholder="اسمك" required>
-      <input type="email" name="email" placeholder="بريدك الإلكتروني" required>
-      <textarea name="message" rows="5" placeholder="رسالتك..." required></textarea>
+
+  <!-- Navigation -->
+  <nav>
+    <a href="index.html">الرئيسية</a>
+    <a href="about.html">عن الفيلم</a>
+    <a href="contact.html">تواصل معنا</a>
+    <a href="privacy.html">سياسة الخصوصية</a>
+  </nav>
+
+  <!-- Main Section -->
+  <section>
+    <h2>أرسل رسالة</h2>
+    <form>
+      <label for="name">الاسم</label>
+      <input type="text" id="name" name="name" placeholder="اكتب اسمك هنا" required />
+
+      <label for="email">البريد الإلكتروني</label>
+      <input type="email" id="email" name="email" placeholder="اكتب بريدك الإلكتروني" required />
+
+      <label for="message">الرسالة</label>
+      <textarea id="message" name="message" rows="5" placeholder="اكتب رسالتك هنا..." required></textarea>
+
       <button type="submit">إرسال</button>
     </form>
-  </main>
+  </section>
+
+  <!-- Footer -->
   <footer>
-    <p>© 2025 جميع الحقوق محفوظة</p>
+    <p>© 2025 فيلم F1. جميع الحقوق محفوظة.</p>
   </footer>
+
 </body>
 </html>
